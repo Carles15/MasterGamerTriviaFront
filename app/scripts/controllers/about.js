@@ -14,4 +14,5 @@ angular.module('masterGamerTriviaFrontApp')
       'AngularJS',
       'Karma'
     ];
+
   });

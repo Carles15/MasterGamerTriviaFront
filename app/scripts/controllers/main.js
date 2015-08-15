@@ -5,6 +5,7 @@ angular.module('masterGamerTriviaFrontApp')
 
   	$scope.mostrar = WorldOfWarcraftQuestionService.get({id:"1"});
     $scope.hola="Hola Mundo";
+    console.log($scope.hola);
 
   	/*var getWowQuestionFromService = function(itemTypes){
 
