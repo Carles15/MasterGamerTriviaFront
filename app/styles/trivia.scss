@@ -1,0 +1,58 @@
+div.globalTriviaContainer{
+	div.triviaTitle{
+		width: 100%;
+		height: 110px;
+		background-color: purple;
+	}
+
+	div.interactiveDisplayContainer{
+		width: 100%;
+		height: 678px;
+
+		div.dataInfo{
+
+			div.textToAnswer{
+				width: 80%;
+				height: 300px;
+
+				margin-left: 10%;
+				margin-top: 5%;
+
+				background-color: #F2F2F2;
+			}
+		}
+
+		div.dataAnswers{
+
+			div.anwsersContainer{
+				width: 80%;
+				height: 500px;
+
+				margin-left: 10%;
+				margin-top: 3%;
+
+				background-color: #F2F2F2;
+
+				div.speedInfo{
+					width: 100%;
+					height: 25%;
+				}
+
+				div.buttons{
+					width: 100%;
+					height: 100%;
+					background-color: cyan;
+
+					div.rightButtons{
+						heigth: 50%;
+					}
+
+					div.rightButtons{
+						heigth: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
