@@ -1,15 +1,45 @@
 body {
   margin: 0px;
-  background-color: #7C7C7C;
+  background-color: #E6E6E6;
 
   div.generalHeader{
     width: 100%;
     height: 110px;
     background-color: #3399FF;
+
+    div.avatar{
+      height: 100px;
+      width: 100px;
+      background-color: white;
+
+      margin-left: 2%;
+      margin-top: 0.5%;
+
+      position:absolute;
+
+      background-image: url(https://pbs.twimg.com/profile_images/378800000377003517/018a703bdf27c630c1585d5ff7b9c94e_400x400.jpeg);
+      background-size: 100% 100%;
+
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+    }
+
   }
 
   div.options{
     width: 100%;
     margin-top: 0.5% !important;
+
+    div.leftOptions{
+      margin-left: 0.5%;
+    }
+
+    div.rightOptions{
+      margin-left: 2.5%;
+    }
   }
 }
+
+/*https://s-media-cache-ak0.pinimg.com/236x/f8/d5/ca/f8d5ca89308a3f69c426d2fa8c0b918f.jpg*/

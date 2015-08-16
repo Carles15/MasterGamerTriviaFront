@@ -1,16 +1,22 @@
-<div class="generalHeader md-whiteframe-z1"></div>
+<div class="generalHeader md-whiteframe-z1">
+
+  <div class="avatar md-whiteframe-z1"></div>
+
+</div>
 
 <div class="options" layout="row">
 
-	<div flex="30" style="height: 660px;">
+	<div flex="30" style="height: 660px;" class="leftOptions">
 		<md-grid-list md-cols="1" md-row-height="320px" md-gutter="12px">
-		    <md-grid-tile class="gray md-whiteframe-z1" md-rowspan="1" md-colspan="1" style="background-color: orange;">
+		    <md-grid-tile class="md-whiteframe-z1" md-rowspan="1" md-colspan="1" style="background-color: orange;">
+          <p>Ranking</p>
 		      <md-grid-tile-footer>
 		        <h3>#1: (3r x 2c)</h3>
 		      </md-grid-tile-footer>
 		    </md-grid-tile>
 
-		    <md-grid-tile class="gray md-whiteframe-z1" md-rowspan="1" md-colspan="1" style="background-color: #00CC00;">
+		    <md-grid-tile class="md-whiteframe-z1" md-rowspan="1" md-colspan="1" style="background-color: #00CC00;">
+          <p>Premios</p>
 		      <md-grid-tile-footer>
 		        <h3>#1: (3r x 2c)</h3>
 		      </md-grid-tile-footer>
@@ -19,8 +25,19 @@
 
 	</div>
 
-	<div flex="70" style="background-color: white; height: 660px;">
+	<div flex="65" style="height: 660px;" class="rightOptions">
+    <md-grid-list md-cols="4" md-row-height="150px" md-gutter="12px">
 
+      <md-grid-tile class="md-whiteframe-z1" md-rowspan="1" md-colspan="1" style="background-color: #0099FF; background-image: url(); background-size: 100% 100%;" ng-repeat="juego in juegos" ng-click="goTrivia(juego.nombre)">
+
+        <p>{{juego.nombre}}</p>
+
+        <md-grid-tile-footer>
+          <h3>#1: (3r x 2c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+    </md-grid-list>
 	</div>
 
 	<!-- 
