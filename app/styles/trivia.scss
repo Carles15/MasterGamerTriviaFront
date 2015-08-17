@@ -1,8 +1,156 @@
+/*********************************************************************************************************
+**********************************************************************************************************
+**                                                                                                      **
+**                                   PRESENTATIONDATA SECTION                                           **
+**																										**
+**********************************************************************************************************
+*********************************************************************************************************/
+
+div.presentationData{
+	width: 100%;
+	height: 787px;
+	background-color: purple;
+
+	div.centralContainer{
+		width:70%;
+		height: 70%;
+		margin-left: 15%;
+		margin-top:6%;
+		position: absolute;
+
+		div.presentationLogo{
+			height: 300px;
+		    width: 300px;
+		    background-color: white;
+
+		    margin-left: 10%;
+		    margin-top: 10%;
+
+		    position:absolute;
+
+		    background-size: 100% 100%;
+
+		    border-radius: 200px 200px 200px 200px;
+		    -moz-border-radius: 200px 200px 200px 200px;
+		    -webkit-border-radius: 200px 200px 200px 200px;
+		    border: 0px solid #000000;
+
+		    img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		}
+
+		div.presentationInfo{
+			width:35%;
+			height: 70%;
+
+			margin-left: 55%;
+			margin-top: 12%;
+
+			div.informationPresentation{
+				background-color: #FFF;
+				height: 10%;
+
+				p{
+					margin-top: 3%;
+					margin-left: 3%;
+				}
+			}
+
+			div.presentationSeparator{
+				height: 10%;
+			}
+		}
+
+		div.presentationOptions{
+			width: 50%;
+			height: 100px;
+			margin-left:25%;
+
+			div.buttons{
+				height: 100%;
+				width: 100px;
+
+				border-radius: 200px 200px 200px 200px;
+			    -moz-border-radius: 200px 200px 200px 200px;
+			    -webkit-border-radius: 200px 200px 200px 200px;
+			    border: 0px solid #000000;
+			}
+
+			.enter{
+				background-color: #66FF33;
+				background-image: url(../images/icons/doneWhite.png);
+				background-size: 100% 100%;
+
+				-webkit-transition: width 1s; /* Safari */
+    			transition: width 1s;
+			}
+
+			.enter:hover{
+				width: 50%;
+				background-image: url(../images/icons/go.png);
+			}
+
+			.leave{
+				margin-top: -100px;
+				float:right;
+				background-color: #FF1919;
+				background-image: url(../images/icons/crossWhite.png);
+				background-size: 100% 100%;
+
+				-webkit-transition: width 1s; /* Safari */
+    			transition: width 1s;
+			}
+
+			.leave:hover{
+				width: 50%;
+				background-image: url(../images/icons/back.png);
+			}
+		}
+	}
+}
+
+
+
+
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**                                                                                                      **
+**                                          QUESTIONS SECTION                                           **
+**																										**
+**********************************************************************************************************
+*********************************************************************************************************/
+
 div.globalTriviaContainer{
 	div.triviaTitle{
 		width: 100%;
 		height: 110px;
 		background-color: purple;
+
+		div.gameLogo{
+			height: 100px;
+		    width: 100px;
+		    background-color: white;
+
+		    margin-left: 2%;
+		    margin-top: 0.5%;
+
+		    position:absolute;
+
+		    background-size: 100% 100%;
+
+		    border-radius: 200px 200px 200px 200px;
+		    -moz-border-radius: 200px 200px 200px 200px;
+		    -webkit-border-radius: 200px 200px 200px 200px;
+		    border: 0px solid #000000;
+
+		    img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		}
 	}
 
 	div.interactiveDisplayContainer{
@@ -19,6 +167,10 @@ div.globalTriviaContainer{
 				margin-top: 5%;
 
 				background-color: #F2F2F2;
+
+				p{
+					font-family: 'Advent Pro', sans-serif;
+				}
 			}
 		}
 
@@ -36,20 +188,18 @@ div.globalTriviaContainer{
 				div.speedInfo{
 					width: 100%;
 					height: 25%;
+
+					div.speedText{
+						span{
+							margin-top: 5%;
+						}
+					}
 				}
 
 				div.buttons{
 					width: 100%;
 					height: 100%;
-					background-color: cyan;
-
-					div.rightButtons{
-						heigth: 50%;
-					}
-
-					div.rightButtons{
-						heigth: 50%;
-					}
+					padding-top: 0.5%;
 				}
 			}
 		}

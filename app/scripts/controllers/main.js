@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('masterGamerTriviaFrontApp')
-  .controller('MainCtrl', function ($scope, $resource, GameInfoService) {
+  .controller('MainCtrl', function ($scope, $resource,$location, GameInfoService) {
 
     $scope.juegos = GameInfoService.findAll();
 
     $scope.goTrivia = function(gameSelected) {
-      alert("Ir a " + gameSelected);
+      $location.url("/trivia");
+      //alert("Ir a " + gameSelected);
     }
 
   	//$scope.mostrar = GameInfoService.get({id:"1"});

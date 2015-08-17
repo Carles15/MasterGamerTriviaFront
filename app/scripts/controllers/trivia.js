@@ -1,17 +1,18 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name masterGamerTriviaFrontApp.controller:TriviaCtrl
- * @description
- * # TriviaCtrl
- * Controller of the masterGamerTriviaFrontApp
- */
 angular.module('masterGamerTriviaFrontApp')
-  .controller('TriviaCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('TriviaCtrl', function ($scope, $resource, $location, WorldOfWarcraftQuestionService) {
+  	$scope.start= false;
+    $scope.pregunta = WorldOfWarcraftQuestionService.get({id:"2"});
+    $scope.questionsQuantity = WorldOfWarcraftQuestionService.getQuantity();
+    console.log($scope.questionsQuantity);
+
+    $scope.goIn = function() {
+    	$scope.start= true;
+    }
+
+    $scope.goBack = function() {
+    	$location.url("/");
+    }
+
   });
